@@ -1,0 +1,318 @@
+/* reset */
+html {
+  line-height: 1;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Add the correct display in IE 10-. */
+[hidden] {
+  display: none;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+body {
+  background-color: #d5bda5;
+  color: #fff;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 900;
+  line-height: 1;
+  padding: 0 0.25em;
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1.375em;
+  margin: 0.75em 0 0.5em;
+}
+
+p {
+  line-height: 1.25;
+}
+
+small, .small {
+  font-size: 0.875em;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.larger {
+  font-size: 1.375em;
+}
+
+.smaller {
+  font-size: 0.85em;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.text--red {
+  color: #f12908;
+}
+
+.site {
+  min-width: 255px;
+}
+
+.text-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 3%;
+}
+
+.button-container {
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  background-color: #88b149;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.375em;
+  font-weight: 600;
+  line-height: 1.15;
+  padding: 0.25em;
+}
+
+header {
+  background-color: #c4c4bc;
+  overflow: hidden;
+  position: relative;
+}
+header .background-image {
+  max-width: none;
+  position: absolute;
+}
+header .background-image.mobile {
+  bottom: 0;
+  height: 100%;
+  right: 50%;
+  top: 0;
+  -webkit-transform: translate(50%, 0);
+  -moz-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+  -o-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+}
+header .background-image.desktop {
+  bottom: 50%;
+  left: 0;
+  max-width: none;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  -o-transform: translate(0, 50%);
+  transform: translate(0, 50%);
+  width: 100%;
+}
+header .logo-container {
+  padding: 0.25em 0.25em 0;
+  position: relative;
+}
+header .logo {
+  max-width: 175px;
+  width: 75%;
+}
+header .text-container.align-center {
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+  position: relative;
+}
+header .text-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  font-size: 22vw;
+  margin: 0.75em 0;
+  padding: 0.425em 0;
+}
+header .button {
+  font-size: 1.5em;
+}
+
+main .tageline-container {
+  padding: 1em 1.25em 0;
+}
+main .tageline-container__inner {
+  background-color: #88b149;
+  background-image: url("../assets/images/box.png");
+  /*background-repeat: ;
+  background-attachment: ;
+  background-position: ;
+  background-clip: ;
+  background-origin: ;*/
+  background-size: cover;
+  border-radius: 1.5em;
+  padding: 0.5em 0.25em;
+}
+main h2 {
+  line-height: 1.15;
+  text-shadow: 2px 2px 6px #000;
+}
+main .featured-product-container {
+  background-color: #000;
+  border-radius: 1.5em;
+  margin: 1.5em 0;
+  padding: 1em;
+}
+main h3 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+main h3 .larger {
+  padding: 0 0.25em;
+}
+main .desktop {
+  display: none;
+}
+
+footer {
+  color: #000;
+  font-size: 1.75em;
+  font-weight: 600;
+}
+footer p {
+  margin-bottom: 1rem;
+}
+footer .countdown p {
+  margin-bottom: 0;
+}
+footer .countdown span {
+  background-color: #88b149;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 2px 1rem 5px;
+}
+
+@media screen and (min-width: 505px) {
+  header .logo-container {
+    padding: 0.5em 0.5em 0;
+  }
+  header .text-box {
+    font-size: 17vh;
+  }
+  header .button {
+    font-size: 1.75em;
+  }
+
+  main .image-container {
+    width: 35%;
+  }
+  main .description-contaier {
+    width: 65%;
+  }
+  main .left {
+    display: inline-block;
+    padding-right: 0.375em;
+    vertical-align: middle;
+  }
+  main .right {
+    display: inline-block;
+    padding-left: 0.375em;
+    vertical-align: middle;
+  }
+  main .mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 850px) {
+  main .left {
+    padding-right: 0.75em;
+  }
+  main .right {
+    padding-left: 0.75em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
