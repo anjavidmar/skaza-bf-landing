@@ -9,27 +9,11 @@ var w = window.innerWidth;
 console.log('hello world');
 console.log('screen height = ' + h, 'screen width = ' + w);
 
-// header
-
 var header = document.getElementById('header');
 var header_h = header.offsetHeight;
 var header_w = header.offsetWidth;
-// var check_w = header_h * 1.5;
-
 var background_image = document.getElementsByClassName('background-image');
 
-if (w > header_h * 1.5) {
-    console.log('too wide');
-    background_image[0].classList.remove('mobile');
-    background_image[0].classList.add('desktop');
-} else {
-    console.log('too heigh');
-    background_image[0].classList.add('mobile');
-    background_image[0].classList.remove('desktop');
-}
-
-
-// countdown function:
 var countdown = document.getElementById('countdown');
 var countDownTo = new Date('Nov 30, 2019 00:00:00').getTime();
 
@@ -53,6 +37,23 @@ var x = setInterval(function() {
 
     countdown.innerHTML = h + ':' + m + ':' + s;
 
+    // header
+    h = window.innerHeight;
+    w = window.innerWidth;
+    header_h = header.offsetHeight;
+    header_w = header.offsetWidth;
+
+    if (w > header_h * 1.5) {
+        console.log('too wide');
+        background_image[0].classList.remove('mobile');
+        background_image[0].classList.add('desktop');
+    } else {
+        console.log('too heigh');
+        background_image[0].classList.add('mobile');
+        background_image[0].classList.remove('desktop');
+    }
+
+    // stop countdown
     if (timeRemaining < 0) {
         clearInterval(x);
         countdown.innerHTML = 'akcija končana';
