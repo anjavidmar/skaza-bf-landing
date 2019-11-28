@@ -38,11 +38,9 @@ var x = setInterval(function() {
     header_w = header.offsetWidth;
 
     if (w > header_h * 1.5) {
-        console.log('too wide');
         background_image[0].classList.remove('mobile');
         background_image[0].classList.add('desktop');
     } else {
-        console.log('too heigh');
         background_image[0].classList.add('mobile');
         background_image[0].classList.remove('desktop');
     }

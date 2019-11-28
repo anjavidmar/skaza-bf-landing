@@ -359,18 +359,16 @@ footer .countdown span {
   p, li {
     font-size: 1.1875em;
   }
-
-  main .featured-product-container:first-child {
-    padding: 0 1.75em 0.25em;
-  }
-  main .featured-product-container:nth-child(2), main .featured-product-container:last-child {
+}
+@media screen and (min-width: 1095px) {
+  main .featured-product-container {
     padding: 1.75em;
   }
-  main .featured-product-container:nth-child(2) .image-container, main .featured-product-container:last-child .image-container {
-    width: 35%;
+  main .featured-product-container .image-container {
+    width: 40%;
   }
-  main .featured-product-container:nth-child(2) .description-contaier, main .featured-product-container:last-child .description-contaier {
-    width: 65%;
+  main .featured-product-container .description-contaier {
+    width: 60%;
   }
   main .left {
     padding-right: 0.75em;
