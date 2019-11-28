@@ -259,10 +259,10 @@ main .image-container {
   max-width: 475px;
 }
 main .image-container .image-container__inner {
+  padding: 1px;
   position: relative;
 }
 main .image-container img {
-  background-color: #000;
   width: 100%;
 }
 main .image-container .overlay {
