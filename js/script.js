@@ -9,7 +9,7 @@ var header_w = header.offsetWidth;
 var background_image = document.getElementsByClassName('background-image');
 
 var countdown = document.getElementById('countdown');
-var countDownTo = new Date('Nov 30, 2019 00:00:00').getTime();
+var countDownTo = new Date('Dec 3, 2019 00:00:00').getTime();
 
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -48,6 +48,6 @@ var x = setInterval(function() {
     // stop countdown
     if (timeRemaining < 0) {
         clearInterval(x);
-        countdown.innerHTML = 'akcija končana';
+        countdown.innerHTML = 'black friday akcija končana';
     }
 }, 1000);
